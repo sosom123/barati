@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBC BANK</title>
+    
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    
+    
+</head>
+<body>
+    
+<div class="conteiner">
+    <div class="secondcard">
+        <br/>
+       <div class="black"></div>
+       
+       <div class="cvv"><p id="cvvcode">000</p></div>
+    </div>
+    <div class="card">
+            <img class="icon" src="https://play-lh.googleusercontent.com/jDZey_jeFRaVFKRBgaS3mWtrEP8S8DPRl-B4YijVGf-OxcN6dAB8j7AyDddlvAZN4nOM" alt="">
+            <p class="icontext">თიბისი ბანკი</p>
+            <p id="cardnumber">0000 0000 0000 0000</p>
+            <div class="namedata">
+                <h1 id="namefirst">სახელი გვარი</h1>
+                <h1 id="data">0/00</h1>
+            </div>
+             <div class="form">
+                 <p class="cardholder">Cardholder Name</p>
+                 
+                <input type="" id="nameholder" oninput="generit(event)" placeholder="სახელი გვარი">
+                <br/>
+                <p class="crdnumber">Card Number</p>
+            <input  id="inpcardnum" type="number"placeholder="0000 0000 0000 0000" >
+            <p id="erornum">არასწორია ბარათის ნომერი</p>
+            
+                <div class="cardinsert">
+            <input type="month" name="" id="day" placeholder="MM">
+            <input type="number"id="cvc" placeholder="cvv">
+            <br/>
+            
+        </div>
+        <button onclick="generit()"  id="confirm">Cnfirm</button>
+            </div>
+   
+  
+</div>
+
+</html>
